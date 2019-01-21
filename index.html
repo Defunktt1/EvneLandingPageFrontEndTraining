@@ -7,86 +7,165 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-<div>
-    <header>
-        <div id="first-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm additional-info" id="mail">
-                        <i class="far fa-envelope"></i> Kauf auf Rechnung
-                    </div>
-                    <div class="col-sm additional-info" id="truck">
-                        <i class="fas fa-truck"></i> Kostenloser
-                        Versand ab 35€
-                    </div>
-                    <div class="col-sm additional-info text-right" id="box">
-                        <i class="fas fa-cube"></i> 1-3 Tage
-                        Lieferzeit
-                    </div>
-                    <div class="col-sm additional-info text-right" id="check">
-                        <i class="fas fa-check"></i> Made in
-                        Germany
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="second-header" class="container">
-            <div class="row">
-                <div class="col-sm-1" id="inst-fb-logo">
-                    <!--<div class="box h-100 d-flex justify-content-center flex-column">-->
-                    <i class="fab fa-lg fa-instagram" id="insta-logo"></i>
-                    <!--<div class="box h-100 d-flex justify-content-center flex-column"><i-->
-                    <i class="fab fa-lg fa-facebook"></i>
-                </div>
-                <div class="col-sm-3 offset-md-1" id="product-about">
-                    <span id="product">Products</span>
-                    <span id="about-us">About Us</span>
-                </div>
-                <div class="col-sm-2 text-center" id="main-logo">
-                    <img src="images/logo.png" alt="vigonation">
-                </div>
-                <div class="col-sm-2 offset-md-1 text-center" id="blog-life">
-                    <span id="blog">Blog</span>
-                    <span id="life-coach">Life Coach</span>
-                </div>
-                <div class="col-sm-1 offset-md-1 text-right" id="shop-user-logo">
-                    <i class="fas fa-shopping-cart" id="buy"></i>
-                    <i class="far fa-user" id="user"></i>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <section id="shop">
-        <div class="container" id="product-block">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="images/product-image.png" alt="product-image">
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm additional-info mail">
+                <i class="far fa-envelope"></i> Kauf auf Rechnung
+            </div>
+            <div class="col-sm additional-info truck">
+                <i class="fas fa-truck"></i> Kostenloser
+                Versand ab 35€
+            </div>
+            <div class="col-sm additional-info text-right box">
+                <i class="fas fa-cube"></i> 1-3 Tage
+                Lieferzeit
+            </div>
+            <div class="col-sm additional-info text-right check">
+                <i class="fas fa-check"></i> Made in
+                Germany
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container nav-menu">
+        <div class="row">
+            <div class="col-sm-1 inst-fb-logo menu-item">
+                <a href="#"><i class="fab fa-lg fa-instagram insta-logo"></i></a>
+                <a href="#"><i class="fab fa-lg fa-facebook fb-logo"></i></a>
+            </div>
+            <div class="col-sm-3 offset-md-1 product-about">
+                <div class="product menu-item"><a href="#">Products</a></div>
+                <div class="about-us menu-item"><a href="#">About Us</a></div>
+            </div>
+            <div class="col-sm-2 text-center main-logo menu-item">
+                <a href="#"><img src="images/logo.png" alt="vigonation"></a>
+            </div>
+            <div class="col-sm-2 offset-md-1 text-center blog-life">
+                <div class="blog menu-item"><a href="#">Blog</a></div>
+                <div class="life-coach menu-item"><a href="#">Life Coach</a></div>
+            </div>
+            <div class="col-sm-1 offset-md-1 text-right shop-user-logo menu-item">
+                <a href="#"><i class="fas fa-shopping-cart buy"></i></a>
+                <a href="#"><i class="far fa-user user"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="shop">
+    <div class="container product-block">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="images/product-image.png" alt="product-image">
+            </div>
+            <div class="col-md-6">
+                <div class="string-mind">
+                    <p>Strong mind</p>
                 </div>
-                <div class="col-md-6">
-                    <div id="string-mind">
-                        <p>Strong mind</p>
+                <div class="subtitle-text">
+                    <p>here go your subtitle text</p>
+                </div>
+                <div class="raiting-comments">
+                    <div class="raiting text-left">
+                        <ul id="stars">
+                            <li class="star" data-value="1"><i class="fa fa-star fa-fw"></i></li>
+                            <li class="star" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+                            <li class="star" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+                            <li class="star" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+                            <li class="star" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+                        </ul>
                     </div>
-                    <div id="subtitle-text">
-                        <p>here go your subtitle text</p>
+                    <div class="comments">
+                        <img src="images/comments.png" alt="comments">
+                        <p>70 Bewertungen</p>
                     </div>
-                    <div id="raiting-comments">
-                        <span id="raiting">
-                            <img src="images/raiting.png" alt="raiting">
-                        </span>
-                        <div id="comments">
-                            <img src="images/comments.png" alt="comments">
-                            <p>70 Bewertungen</p>
+                </div>
+                <div class="description">
+                    <ul class="list-description">
+                        <li class="description-element" id="description-button" data-value="0"><a
+                                href="#">Description</a></li>
+                        <li class="description-element" id="ingredients-button" data-value="1"><a
+                                href="#">Ingredients</a></li>
+                        <li class="description-element" id="intake-button" data-value="2"><a href="#">Intake</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="information" id="description-text">
+                    <ul class="information-ul-text">
+                        <li>Vitamin C, D Und Zink tragen zu einem widerstandsfahigen Immunsystem bei</li>
+                        <li>Wertvolle Pflanzenextrakte wie u.a. Andrographiskraut, SuBholz, Gelbwurzel, Ingwer und
+                            Zyperngras
+                        </li>
+                        <li>Zwei-Handvoll unserer erlesen Pflanzen in einer einzigen Kapsel</li>
+                        <li>Rezuptur basierend auf jahrelanger und intensiver Furschung</li>
+                    </ul>
+                </div>
+                <div class="information" id="ingredients-text">
+                    <ul class="information-ul-text">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="information" id="intake-text">
+                    <ul class="information-ul-text">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>Vegan ingridients</li>
+                        <li>Sugar free</li>
+                        <li>Gluten free</li>
+                        <li>Lactose free</li>
+                        <li>Without colours</li>
+                        <li>Package contains 60 capsules</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="product-info container">
+                    <div class="row">
+                        <div class="col-md-4">In stock</div>
+                        <div class="col-md-4">Shipping time: 1-3 days</div>
+                        <div class="col-md-4">Kauf auf Rechnung</div>
+                    </div>
+                </div>
+                <div class="purchase container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="price">
+                                $20
+                            </div>
+                            <div class="weight">
+                                Inkl. MwSt. (39.99 $/1kg)
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            Amount <1>
+                        </div>
+                        <div class="col-md-6 purchase-button">
+                            <button type="button">PUT IN CART</button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+  "name": "evne-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for learning",
+  "main": "index.js",
+  "repository": "https://github.com/Defunktt1/EvneLandingPageFrontEndTraining.git",
+  "author": "vovcharenko <ovcharenko.v@evnedev.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.16.1"
+  }
+}

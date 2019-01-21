@@ -1,0 +1,176 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: #37383c;
+}
+
+.header .additional-info {
+  font-size: 12px;
+  line-height: 37px;
+  color: #92999a;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.header .truck {
+  padding-left: 4.8%;
+}
+
+.header .box {
+  padding-right: 2%;
+}
+
+.nav-menu {
+  font-size: 15px;
+  line-height: 37px;
+  color: #92999a;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.nav-menu {
+  padding: 30px 15px;
+}
+
+.nav-menu .inst-fb-logo .insta-logo {
+  margin-right: 40%;
+}
+
+.nav-menu .menu-item {
+  display: inline-block;
+}
+
+.nav-menu .menu-item a {
+  color: #92999a;
+  text-decoration: none;
+}
+
+.nav-menu .product-about .product, .about-us {
+  margin-left: 13%;
+}
+
+.nav-menu .product-about .about-us {
+  margin-left: 11%;
+}
+
+.nav-menu .main-logo img {
+  max-width: 100%;
+}
+
+.nav-menu .blog-life .life-coach {
+  margin-left: 20%;
+}
+
+.nav-menu .shop-user-logo .buy {
+  margin-right: 47%;
+}
+
+.shop .product-block {
+  margin-top: 120px;
+}
+
+.shop .string-mind p {
+  font-size: 50px;
+  font-family: "Work Sans", sans-serif;
+  color: #717b7f;
+  line-height: 1.2;
+  font-weight: lighter;
+}
+
+.shop .subtitle-text {
+  margin-top: 22px;
+}
+
+.shop .subtitle-text p {
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+  color: #8d979b;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+ul#stars {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#stars > li.star {
+  display: inline-block;
+}
+
+ul#stars li.star.hover {
+  color: #FFCC36;
+}
+
+.shop .raiting {
+  display: inline-block;
+}
+
+.shop .raiting-comments .comments {
+  display: inline-block;
+  margin: 2px 0 0 32px;
+}
+
+.shop .raiting-comments p {
+  display: inline;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+  color: #8d9699;
+  text-decoration: underline;
+  line-height: 1.2;
+}
+
+.shop .description {
+  display: inline-block;
+  margin-top: 45px;
+}
+.shop .description .description-element a {
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  color: rgba(113, 123, 127, 0.6);
+  line-height: 1.2;
+}
+.shop .description .description-element a:hover {
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  color: #4d9ad3;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.list-description {
+  margin: 0;
+  padding: 0;
+}
+
+.shop .description .description-element {
+  display: inline-block;
+  margin-right: 100px;
+}
+.shop .description .description-element:last-child {
+  margin-right: 0;
+}
+.shop .description .description-element a {
+  text-decoration: none;
+}
+
+.shop .information .information-ul-text {
+  margin-left: 3%;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #8d9699;
+  line-height: 1.8;
+}
+
+/* end product block */
+
+/*# sourceMappingURL=index.css.map */
